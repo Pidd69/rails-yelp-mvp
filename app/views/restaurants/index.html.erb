@@ -1,2 +1,14 @@
-<h1>Restaurants#index</h1>
-<p>Find me in app/views/restaurants/index.html.erb</p>
+<div class="container">
+<h1>Restaurants</h1>
+<p>Select your favourite restaurant</p>
+
+  <% @restaurants.each do |restaurant| %>
+  <h3><%= link_to restaurant.name, restaurant_path(restaurant), class: "text-uppercase font-weight-bold" %></h3>
+  <p><%= restaurant.category.capitalize %> | Phone: <%= restaurant.phone_number %> </p>
+  <% end %>
+  <br>
+  <br>
+  <br>
+
+
+</div>

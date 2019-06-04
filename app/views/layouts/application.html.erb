@@ -12,6 +12,13 @@
   </head>
 
   <body>
+    <div class="navbar">
+      <div><h2>Peter's restaurants</h2></div>
+      <div>
+        <%= link_to 'Add Restaurant', new_restaurant_path, class:"btn btn-primary" %>
+        <%= link_to 'View all restaurants', restaurants_path, class: "btn btn-secondary"%>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>
